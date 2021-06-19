@@ -1,13 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0
-  padding: 0
+  margin: 0;
+  padding: 0;
+  height: 1000px;
+  width: 100%;
+  background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Kumbh Sans', sans-serif;
 }
 
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: white;
+  padding: 5vmin 5vmin 5vmin 0;
+}
+.woman {
+  background-image: url('./images/illustration-woman-online-desktop.svg');
+  margin-left: -20px;
+  background-size: 35vmin;
+  background-repeat: no-repeat;
+  background-position: left center;
+  width: 40vmin;
+  height: 40vmin;
+}
+.faqs {
+  padding: 0;
+}
+.card-heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.faq {
+  list-style: none;
+  font-size: 0.8rem;
+  color: hsl(237, 12%, 33%);
+}
 .ques {
   display: flex;
   align-items: center;
+}
+
+.ans {
+  display: none;
 }
