@@ -14,12 +14,19 @@ quesDivs.forEach((ques) => {
 
 quesDivs.forEach((ques) => {
   ques.addEventListener('click',() => {
+
+    const icon = ques.firstElementChild.lastElementChild
     const displayprop = ques.lastElementChild.style.display
     if(!displayprop || displayprop=='none') {
         ques.parentElement.style.width = '350px'
+        ques.firstElementChild.style.fontWeight='bold'
+        ques.lastElementChild.style.color = 'hsl(240, 6%, 50%)';
         ques.lastElementChild.style.display = 'block'
+        icon.style.transform = 'scaleY(-1)'
     } else {
+      ques.firstElementChild.style.fontWeight='normal'
       ques.lastElementChild.style.display = 'none'
+      icon.style.transform = 'scaleY(1)'
     }
 
   })
