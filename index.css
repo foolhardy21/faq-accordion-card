@@ -28,7 +28,6 @@ body {
   background-image: url('./images/bg-pattern-desktop.svg');
   background-size: 100%;
   background-repeat: no-repeat;
-  /* background-position: -700px -400px; */
   background-position: bottom -7rem left -25rem;
 }
 .woman {
@@ -99,5 +98,8 @@ body {
   }
   .faqs {
     margin-left: 20px;
+  }
+  .box {
+    display: none;
   }
 }
