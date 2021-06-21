@@ -41,6 +41,14 @@ body {
   background-size: 100%;
   background-position: center;
 }
+.box {
+  background-image: url('./images/illustration-box-desktop.svg');
+  width: 100px;
+  height: 100px;
+  background-size: 100%;
+  position: absolute;
+  left: 25%;
+}
 .faqs {
   padding: 0;
 }
