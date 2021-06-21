@@ -7,13 +7,14 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'Kumbh Sans', sans-serif;
+  user-select: none;
 }
 
 .card {
@@ -25,8 +26,10 @@ body {
   overflow: hidden;
   border-radius: 10px;
   background-image: url('./images/bg-pattern-desktop.svg');
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: -700px -400px;
+  /* background-position: -700px -400px; */
+  background-position: bottom -7rem left -25rem;
 }
 .woman {
   width: 300px;
@@ -56,13 +59,14 @@ body {
   cursor: pointer;
 }
 .ques {
-  display: flex;
+   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 50vmin;
 }
 .ans {
   display: none;
+  width: 50vmin;
 }
 
 @media(max-width: 700px) {
@@ -73,7 +77,8 @@ body {
     flex-direction: column;
     overflow: visible;
     background-image: url('./images/bg-pattern-mobile.svg');
-    background-position: 50px 20px;
+    background-size: 100%;
+    background-position: bottom 20rem left 0rem;
   }
   .woman {
     background-image: url('./images/illustration-woman-online-mobile.svg');
@@ -85,6 +90,6 @@ body {
     text-align: center;
   }
   .faqs {
-    padding-left: 30px;
+    margin-left: 20px;
   }
 }

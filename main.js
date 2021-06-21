@@ -18,7 +18,7 @@ quesDivs.forEach((ques) => {
     const icon = ques.firstElementChild.lastElementChild
     const displayprop = ques.lastElementChild.style.display
     if(!displayprop || displayprop=='none') {
-        ques.parentElement.style.width = '350px'
+        ques.parentElement.style.width = '50vmin'
         ques.firstElementChild.style.fontWeight='bold'
         ques.lastElementChild.style.color = 'hsl(240, 6%, 50%)';
         ques.lastElementChild.style.display = 'block'
